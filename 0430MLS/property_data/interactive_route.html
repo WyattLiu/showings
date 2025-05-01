@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_053c2c0d94ab36bd5041e99e0655b90c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_053c2c0d94ab36bd5041e99e0655b90c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_053c2c0d94ab36bd5041e99e0655b90c = L.map(
+                "map_053c2c0d94ab36bd5041e99e0655b90c",
+                {
+                    center: [43.7488278875, -79.31590094375],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4467264ec681779a62c73607f7a2717c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4467264ec681779a62c73607f7a2717c.addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var marker_44a090dc8e772f95722664fe0e1d45ad = L.marker(
+                [43.7223963, -79.3072251],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_701497d9bf0ac20f79c94fa5eca9b873 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e1\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_44a090dc8e772f95722664fe0e1d45ad.setIcon(div_icon_701497d9bf0ac20f79c94fa5eca9b873);
+        
+    
+        var popup_bdf494af1bbb2d2d6703e149a2f97457 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3b58a74dfa9b2c375fcb9a783bff44a9 = $(`<div id="html_3b58a74dfa9b2c375fcb9a783bff44a9" style="width: 100.0%; height: 100.0%;">                 <img src="C12076348/images/C12076348_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 1: C12076348</b><br>                 64A Tisdale Avenue  - North York - Victoria Village<br>                 Listed for: $ 1,100,000<br>                 Freehold Townhouse, 3+1 bed, 3 bath<br>                 <p><small>待定，eglinton 近，东西</small></p>                 <a href="https://housesigma.com/on/north-york-real-estate/64a-tisdale-avenue/home/B5bO3xXqVNk3kWVP?id_listing=jAXw7QpjD9dyQOzg&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_bdf494af1bbb2d2d6703e149a2f97457.setContent(html_3b58a74dfa9b2c375fcb9a783bff44a9);
+            
+        
+
+        marker_44a090dc8e772f95722664fe0e1d45ad.bindPopup(popup_bdf494af1bbb2d2d6703e149a2f97457)
+        ;
+
+        
+    
+    
+            marker_44a090dc8e772f95722664fe0e1d45ad.bindTooltip(
+                `<div>
+                     Stop 1: C12076348
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_44a090dc8e772f95722664fe0e1d45ad.setIcon(div_icon_701497d9bf0ac20f79c94fa5eca9b873);
+            
+    
+            var marker_b35249e9ce5cbce4c212ea83c2539024 = L.marker(
+                [43.7234881, -79.3076867],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_381fcade90c7cff084f00142086c401c = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e2\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_b35249e9ce5cbce4c212ea83c2539024.setIcon(div_icon_381fcade90c7cff084f00142086c401c);
+        
+    
+        var popup_5e7a7213c62d8b82c0eac70ef7d1b49d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a647b7d6200b1e7e7efa74622abf631b = $(`<div id="html_a647b7d6200b1e7e7efa74622abf631b" style="width: 100.0%; height: 100.0%;">                 <img src="C12057548/images/C12057548_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 2: C12057548</b><br>                 84 Tisdale Avenue  - North York - Victoria Village<br>                 Listed for: $ 1,099,900<br>                 Freehold Townhouse, 4+1 bed, 4 bath<br>                 <p><small>东西 eglinton</small></p>                 <a href="https://housesigma.com/on/north-york-real-estate/84-tisdale-avenue/home/DO1w3WqWGJOy8Jg0?id_listing=nbq6y1KNeJ43o9DA&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_5e7a7213c62d8b82c0eac70ef7d1b49d.setContent(html_a647b7d6200b1e7e7efa74622abf631b);
+            
+        
+
+        marker_b35249e9ce5cbce4c212ea83c2539024.bindPopup(popup_5e7a7213c62d8b82c0eac70ef7d1b49d)
+        ;
+
+        
+    
+    
+            marker_b35249e9ce5cbce4c212ea83c2539024.bindTooltip(
+                `<div>
+                     Stop 2: C12057548
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b35249e9ce5cbce4c212ea83c2539024.setIcon(div_icon_381fcade90c7cff084f00142086c401c);
+            
+    
+            var marker_4245751dca699c67905fe70e9ae4b4b1 = L.marker(
+                [43.7227918, -79.3079433],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_4c4020fce4707a1266eae1ab6a99e5ed = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e3\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_4245751dca699c67905fe70e9ae4b4b1.setIcon(div_icon_4c4020fce4707a1266eae1ab6a99e5ed);
+        
+    
+        var popup_b30d195e7e6f84fae06fe57cb3524eb4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bd5e3d98f04e7deea3988cb6c26b3182 = $(`<div id="html_bd5e3d98f04e7deea3988cb6c26b3182" style="width: 100.0%; height: 100.0%;">                 <img src="C11940292/images/C11940292_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 3: C11940292</b><br>                 23 CASE OOTES Drive  - North York - Victoria Village<br>                 Listed for: $ 1,039,990<br>                 Condo Townhouse, 4+1 bed, 4 bath<br>                 <p><small>condo TH</small></p>                 <a href="https://housesigma.com/on/north-york-real-estate/23-case-ootes-drive/home/DO1w3Wq1m6ny8Jg0?id_listing=4KAX7Nj0BxO7eRPJ&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_b30d195e7e6f84fae06fe57cb3524eb4.setContent(html_bd5e3d98f04e7deea3988cb6c26b3182);
+            
+        
+
+        marker_4245751dca699c67905fe70e9ae4b4b1.bindPopup(popup_b30d195e7e6f84fae06fe57cb3524eb4)
+        ;
+
+        
+    
+    
+            marker_4245751dca699c67905fe70e9ae4b4b1.bindTooltip(
+                `<div>
+                     Stop 3: C11940292
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4245751dca699c67905fe70e9ae4b4b1.setIcon(div_icon_4c4020fce4707a1266eae1ab6a99e5ed);
+            
+    
+            var marker_91565d75b48357ee8f48e60ff6592d28 = L.marker(
+                [43.72082, -79.33303],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_18de3fb815be3f75e9602165ebe3f6bb = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_91565d75b48357ee8f48e60ff6592d28.setIcon(div_icon_18de3fb815be3f75e9602165ebe3f6bb);
+        
+    
+        var popup_4c925c6b3e57e1c7c35905b4a81a98dc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9b340343c2d7cc35f5e354e2a53c15d1 = $(`<div id="html_9b340343c2d7cc35f5e354e2a53c15d1" style="width: 100.0%; height: 100.0%;">                 <img src="C12101501/images/C12101501_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 4: C12101501</b><br>                 50 Seton Park Road  - Toronto - Flemingdon Park<br>                 Listed for: $ 999,000<br>                 Semi-Detached, 3+2 bed, 4 bath<br>                 <p><small>OH Sun Sat 2-4</small></p>                 <a href="https://housesigma.com/on/toronto-real-estate/50-seton-park-road/home/Xawjy41xw5q7rR18?id_listing=dXze3eVMRELY8m9K&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_4c925c6b3e57e1c7c35905b4a81a98dc.setContent(html_9b340343c2d7cc35f5e354e2a53c15d1);
+            
+        
+
+        marker_91565d75b48357ee8f48e60ff6592d28.bindPopup(popup_4c925c6b3e57e1c7c35905b4a81a98dc)
+        ;
+
+        
+    
+    
+            marker_91565d75b48357ee8f48e60ff6592d28.bindTooltip(
+                `<div>
+                     Stop 4: C12101501
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91565d75b48357ee8f48e60ff6592d28.setIcon(div_icon_18de3fb815be3f75e9602165ebe3f6bb);
+            
+    
+            var marker_f2346a6aa8da874ca9697b2f28476df7 = L.marker(
+                [43.73273, -79.30982],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_c8b54e558549dc969285b99783d9555a = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e5\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_f2346a6aa8da874ca9697b2f28476df7.setIcon(div_icon_c8b54e558549dc969285b99783d9555a);
+        
+    
+        var popup_451a37d244bbdbe41159ee627b5c3bbe = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d8fec3b10fbadf239bfc63bbdb1c1f40 = $(`<div id="html_d8fec3b10fbadf239bfc63bbdb1c1f40" style="width: 100.0%; height: 100.0%;">                 <img src="C12106569/images/C12106569_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 5: C12106569</b><br>                 65 Wigmore Drive  - North York - Victoria Village<br>                 Listed for: $ 1,180,000<br>                 Detached, 9993+1 bed, 2 bath<br>                 <p><small>bathroom less</small></p>                 <a href="https://housesigma.com/on/north-york-real-estate/65-wigmore-dr/home/PXRla7gx4DN3jEvL?id_listing=EXrx30edGoWYOklN&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_451a37d244bbdbe41159ee627b5c3bbe.setContent(html_d8fec3b10fbadf239bfc63bbdb1c1f40);
+            
+        
+
+        marker_f2346a6aa8da874ca9697b2f28476df7.bindPopup(popup_451a37d244bbdbe41159ee627b5c3bbe)
+        ;
+
+        
+    
+    
+            marker_f2346a6aa8da874ca9697b2f28476df7.bindTooltip(
+                `<div>
+                     Stop 5: C12106569
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2346a6aa8da874ca9697b2f28476df7.setIcon(div_icon_c8b54e558549dc969285b99783d9555a);
+            
+    
+            var marker_cb2e6da49e8505623229960c0f67b446 = L.marker(
+                [43.75561, -79.31321],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_ea3c802ffe2691b578dd09f489dbdf4d = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e6\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_cb2e6da49e8505623229960c0f67b446.setIcon(div_icon_ea3c802ffe2691b578dd09f489dbdf4d);
+        
+    
+        var popup_658e34390bebc43a93be419454706c59 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_739235a7f5550088e0c7e5aff1c5df01 = $(`<div id="html_739235a7f5550088e0c7e5aff1c5df01" style="width: 100.0%; height: 100.0%;">                 <img src="E12085475/images/E12085475_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 6: E12085475</b><br>                 56 Ivordale Crescent  - Scarborough - Wexford-Maryvale<br>                 Listed for: $ 1,048,000<br>                 Detached, 3+1 bed, 2 bath<br>                 <p><small>OH Sat only 12-2， 东西</small></p>                 <a href="https://housesigma.com/on/scarborough-real-estate/56-ivordale-crescent/home/gJRv53KoKdD3VPW4?id_listing=EXrx30edqZlYOklN&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_658e34390bebc43a93be419454706c59.setContent(html_739235a7f5550088e0c7e5aff1c5df01);
+            
+        
+
+        marker_cb2e6da49e8505623229960c0f67b446.bindPopup(popup_658e34390bebc43a93be419454706c59)
+        ;
+
+        
+    
+    
+            marker_cb2e6da49e8505623229960c0f67b446.bindTooltip(
+                `<div>
+                     Stop 6: E12085475
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb2e6da49e8505623229960c0f67b446.setIcon(div_icon_ea3c802ffe2691b578dd09f489dbdf4d);
+            
+    
+            var marker_47a80a8e01fba7679dac231459da364e = L.marker(
+                [43.77781, -79.42681],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_1582854e966fcb415c20d1e720467585 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e7\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_47a80a8e01fba7679dac231459da364e.setIcon(div_icon_1582854e966fcb415c20d1e720467585);
+        
+    
+        var popup_4f9296ca2dd369972965540ad33452b4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b2babf1c35de6187d4c21fa0bea1a006 = $(`<div id="html_b2babf1c35de6187d4c21fa0bea1a006" style="width: 100.0%; height: 100.0%;">                 <img src="C12067261/images/C12067261_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 7: C12067261</b><br>                 12 Routliffe Lane  - North York - Newtonbrook West<br>                 Listed for: $ 999,000<br>                 Freehold Townhouse, 3 bed, 3 bath<br>                 <p><small>法拍房</small></p>                 <a href="https://housesigma.com/on/north-york-real-estate/12-routliffe-lane/home/5xLkv3VOPQYDBNrW?id_listing=bqB176Zo9M67ZajD&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_4f9296ca2dd369972965540ad33452b4.setContent(html_b2babf1c35de6187d4c21fa0bea1a006);
+            
+        
+
+        marker_47a80a8e01fba7679dac231459da364e.bindPopup(popup_4f9296ca2dd369972965540ad33452b4)
+        ;
+
+        
+    
+    
+            marker_47a80a8e01fba7679dac231459da364e.bindTooltip(
+                `<div>
+                     Stop 7: C12067261
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_47a80a8e01fba7679dac231459da364e.setIcon(div_icon_1582854e966fcb415c20d1e720467585);
+            
+    
+            var marker_f9cf37477fc34f28ea90c9d8a0d56903 = L.marker(
+                [43.80776, -79.42553],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_c6986ecc40a826addf6516bf73b4d956 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e8\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_f9cf37477fc34f28ea90c9d8a0d56903.setIcon(div_icon_c6986ecc40a826addf6516bf73b4d956);
+        
+    
+        var popup_7ca3df5e903f6843f00bebd2c228da38 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8f11ddb48aa3561004b755bdcbbb8018 = $(`<div id="html_8f11ddb48aa3561004b755bdcbbb8018" style="width: 100.0%; height: 100.0%;">                 <img src="N12030860/images/N12030860_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 8: N12030860</b><br>                 59 Brownstone Circle  - Vaughan - Crestwood-Springfarm-Yorkhill<br>                 Listed for: $ 1,199,900<br>                 Freehold Townhouse, 0003+1 bed, 3 bath<br>                 <p><small>东西，待定</small></p>                 <a href="https://housesigma.com/on/vaughan-real-estate/59-brownstone-circle/home/VLaGyG2DVmvYW1ZD?id_listing=Zaw5YoVDRW03n961&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_7ca3df5e903f6843f00bebd2c228da38.setContent(html_8f11ddb48aa3561004b755bdcbbb8018);
+            
+        
+
+        marker_f9cf37477fc34f28ea90c9d8a0d56903.bindPopup(popup_7ca3df5e903f6843f00bebd2c228da38)
+        ;
+
+        
+    
+    
+            marker_f9cf37477fc34f28ea90c9d8a0d56903.bindTooltip(
+                `<div>
+                     Stop 8: N12030860
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f9cf37477fc34f28ea90c9d8a0d56903.setIcon(div_icon_c6986ecc40a826addf6516bf73b4d956);
+            
+    
+            var marker_2426e26e9efc49896dc120e0ae4a19ec = L.marker(
+                [43.79604, -79.30186],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_38ffcaeb4cb77fa59556ba05a11bf471 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e9\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_2426e26e9efc49896dc120e0ae4a19ec.setIcon(div_icon_38ffcaeb4cb77fa59556ba05a11bf471);
+        
+    
+        var popup_851faca10902085ad2142d0f77ee8626 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_387324648f35cc711bb076ab016d84ca = $(`<div id="html_387324648f35cc711bb076ab016d84ca" style="width: 100.0%; height: 100.0%;">                 <img src="E12103575/images/E12103575_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 9: E12103575</b><br>                 50 Glendower Circuit  - Scarborough - L'Amoreaux<br>                 Listed for: $ 1,180,000<br>                 Detached, 3+3 bed, 4 bath<br>                 <p><small>OH Sun Sat 2-4</small></p>                 <a href="https://housesigma.com/on/scarborough-real-estate/50-glendower-crct/home/VgAaOyLNl2P3GxMb?id_listing=Z5BX321nRG57Dar0&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_851faca10902085ad2142d0f77ee8626.setContent(html_387324648f35cc711bb076ab016d84ca);
+            
+        
+
+        marker_2426e26e9efc49896dc120e0ae4a19ec.bindPopup(popup_851faca10902085ad2142d0f77ee8626)
+        ;
+
+        
+    
+    
+            marker_2426e26e9efc49896dc120e0ae4a19ec.bindTooltip(
+                `<div>
+                     Stop 9: E12103575
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2426e26e9efc49896dc120e0ae4a19ec.setIcon(div_icon_38ffcaeb4cb77fa59556ba05a11bf471);
+            
+    
+            var marker_474dd1d3abd737b505c44216668d8404 = L.marker(
+                [43.78323, -79.30596],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_67326e03ff66f2fa2b03191e3b949001 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e10\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_474dd1d3abd737b505c44216668d8404.setIcon(div_icon_67326e03ff66f2fa2b03191e3b949001);
+        
+    
+        var popup_15cf99b23d4ce06eea8e081329bb9f8d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_295e28545ab3b97ac7010b070ac6d5bd = $(`<div id="html_295e28545ab3b97ac7010b070ac6d5bd" style="width: 100.0%; height: 100.0%;">                 <img src="E12100250/images/E12100250_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 10: E12100250</b><br>                 41 Davisbrook Boulevard  - Scarborough - Tam O'Shanter-Sullivan<br>                 Listed for: $ 1,088,000<br>                 Detached, 3+2 bed, 4 bath<br>                 <p><small>东西</small></p>                 <a href="https://housesigma.com/on/scarborough-real-estate/41-davisbrook-blvd/home/xmZRW7nzpwR7EBO9?id_listing=EXrx30ed1zZYOklN&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_15cf99b23d4ce06eea8e081329bb9f8d.setContent(html_295e28545ab3b97ac7010b070ac6d5bd);
+            
+        
+
+        marker_474dd1d3abd737b505c44216668d8404.bindPopup(popup_15cf99b23d4ce06eea8e081329bb9f8d)
+        ;
+
+        
+    
+    
+            marker_474dd1d3abd737b505c44216668d8404.bindTooltip(
+                `<div>
+                     Stop 10: E12100250
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_474dd1d3abd737b505c44216668d8404.setIcon(div_icon_67326e03ff66f2fa2b03191e3b949001);
+            
+    
+            var marker_85287e10f2d4f010d087b921d7b124f9 = L.marker(
+                [43.7775, -79.29887],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_63ba0335b1b4c54cf9e4b5beb6cccb0d = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e11\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_85287e10f2d4f010d087b921d7b124f9.setIcon(div_icon_63ba0335b1b4c54cf9e4b5beb6cccb0d);
+        
+    
+        var popup_1bddb921d6f9345b86be6e3e7b08115b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7bf89f15d9cab37ca3e431f4a07e3620 = $(`<div id="html_7bf89f15d9cab37ca3e431f4a07e3620" style="width: 100.0%; height: 100.0%;">                 <img src="E12104610/images/E12104610_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 11: E12104610</b><br>                 70 Moraine Hill Drive  - Scarborough - Tam O'Shanter-Sullivan<br>                 Listed for: $ 999,999<br>                 Detached, 3+2 bed, 3 bath<br>                 <p><small>No remarks</small></p>                 <a href="https://housesigma.com/on/scarborough-real-estate/main-70-moraine-hill-drive/home/gJRv53K6KOq7VPW4?id_listing=eQp5yOpbeG07d0ZE&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_1bddb921d6f9345b86be6e3e7b08115b.setContent(html_7bf89f15d9cab37ca3e431f4a07e3620);
+            
+        
+
+        marker_85287e10f2d4f010d087b921d7b124f9.bindPopup(popup_1bddb921d6f9345b86be6e3e7b08115b)
+        ;
+
+        
+    
+    
+            marker_85287e10f2d4f010d087b921d7b124f9.bindTooltip(
+                `<div>
+                     Stop 11: E12104610
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_85287e10f2d4f010d087b921d7b124f9.setIcon(div_icon_63ba0335b1b4c54cf9e4b5beb6cccb0d);
+            
+    
+            var marker_0f97860e25b8788143db80104cfb5f02 = L.marker(
+                [43.7554, -79.26501],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_f729fddb553ad53b15c23dd5120a3df6 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e12\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_0f97860e25b8788143db80104cfb5f02.setIcon(div_icon_f729fddb553ad53b15c23dd5120a3df6);
+        
+    
+        var popup_33fca2442cc0be157e3b9481b5c22d9b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_087468461be3ad6e7a8083934ae53274 = $(`<div id="html_087468461be3ad6e7a8083934ae53274" style="width: 100.0%; height: 100.0%;">                 <img src="E12074816/images/E12074816_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 12: E12074816</b><br>                 163 Brockley Drive  - Scarborough - Bendale<br>                 Listed for: $ 1,099,990<br>                 Freehold Townhouse, 0003+1 bed, 4 bath<br>                 <p><small>midland park</small></p>                 <a href="https://housesigma.com/on/scarborough-real-estate/163-brockley-drive/home/DO1w3WqW6OOy8Jg0?id_listing=NkKJ3J1MdOx7d4V6&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_33fca2442cc0be157e3b9481b5c22d9b.setContent(html_087468461be3ad6e7a8083934ae53274);
+            
+        
+
+        marker_0f97860e25b8788143db80104cfb5f02.bindPopup(popup_33fca2442cc0be157e3b9481b5c22d9b)
+        ;
+
+        
+    
+    
+            marker_0f97860e25b8788143db80104cfb5f02.bindTooltip(
+                `<div>
+                     Stop 12: E12074816
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0f97860e25b8788143db80104cfb5f02.setIcon(div_icon_f729fddb553ad53b15c23dd5120a3df6);
+            
+    
+            var marker_4286f2408defde0075dbfe9fcb152d3c = L.marker(
+                [43.74018, -79.27534],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_0e429b572051c7585289d2a73c375d7b = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e13\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_4286f2408defde0075dbfe9fcb152d3c.setIcon(div_icon_0e429b572051c7585289d2a73c375d7b);
+        
+    
+        var popup_dc202b7c6879d6dfd226a815cce1470e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_596684487eabe751b7aacaf2b5321dad = $(`<div id="html_596684487eabe751b7aacaf2b5321dad" style="width: 100.0%; height: 100.0%;">                 <img src="E12100701/images/E12100701_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 13: E12100701</b><br>                 16 Yorkshire Road  - Scarborough - Ionview<br>                 Listed for: $ 1,188,000<br>                 Detached, 3+3 bed, 4 bath<br>                 <p><small>超大lot</small></p>                 <a href="https://housesigma.com/on/scarborough-real-estate/16-yorkshire-rd/home/6zqW7dG21Qpy5eZE?id_listing=Zaw5YoVxbkq3n961&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_dc202b7c6879d6dfd226a815cce1470e.setContent(html_596684487eabe751b7aacaf2b5321dad);
+            
+        
+
+        marker_4286f2408defde0075dbfe9fcb152d3c.bindPopup(popup_dc202b7c6879d6dfd226a815cce1470e)
+        ;
+
+        
+    
+    
+            marker_4286f2408defde0075dbfe9fcb152d3c.bindTooltip(
+                `<div>
+                     Stop 13: E12100701
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4286f2408defde0075dbfe9fcb152d3c.setIcon(div_icon_0e429b572051c7585289d2a73c375d7b);
+            
+    
+            var marker_52588da6d57e8747c3f7e204f884391b = L.marker(
+                [43.7328, -79.29762],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_bfaea2ebc8fc86e96d8ff04a16140822 = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e14\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_52588da6d57e8747c3f7e204f884391b.setIcon(div_icon_bfaea2ebc8fc86e96d8ff04a16140822);
+        
+    
+        var popup_a203db6e4dfa6f554668d0a240255c7b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_895fb322dfd76b351405674c9830a6aa = $(`<div id="html_895fb322dfd76b351405674c9830a6aa" style="width: 100.0%; height: 100.0%;">                 <img src="E12102545/images/E12102545_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 14: E12102545</b><br>                 43 SINGLETON Road  - Scarborough - Wexford-Maryvale<br>                 Listed for: $ 899,000<br>                 Detached, 0003+1 bed, 2 bath<br>                 <p><small>待定 东西 后大公园</small></p>                 <a href="https://housesigma.com/on/scarborough-real-estate/43-singleton-road/home/gAaOyL8wDDZyGxMb?id_listing=EXrx30edZlWYOklN&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_a203db6e4dfa6f554668d0a240255c7b.setContent(html_895fb322dfd76b351405674c9830a6aa);
+            
+        
+
+        marker_52588da6d57e8747c3f7e204f884391b.bindPopup(popup_a203db6e4dfa6f554668d0a240255c7b)
+        ;
+
+        
+    
+    
+            marker_52588da6d57e8747c3f7e204f884391b.bindTooltip(
+                `<div>
+                     Stop 14: E12102545
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52588da6d57e8747c3f7e204f884391b.setIcon(div_icon_bfaea2ebc8fc86e96d8ff04a16140822);
+            
+    
+            var marker_739bf89d34bae71ea8a316ee3fe16ee1 = L.marker(
+                [43.7186, -79.27725],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_958a1b679ac430c22884b2d623d4a68b = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e15\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_739bf89d34bae71ea8a316ee3fe16ee1.setIcon(div_icon_958a1b679ac430c22884b2d623d4a68b);
+        
+    
+        var popup_9f1d5358f7c25ed04fda824c2d83bcaf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_38fc25e0bef276820887548a50127b61 = $(`<div id="html_38fc25e0bef276820887548a50127b61" style="width: 100.0%; height: 100.0%;">                 <img src="E11999057/images/E11999057_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 15: E11999057</b><br>                 148 Cleanside Road  - Scarborough - Clairlea-Birchmount<br>                 Listed for: $ 925,000<br>                 Freehold Townhouse, 0003+1 bed, 3 bath<br>                 <p><small>有火车，太便宜，待定</small></p>                 <a href="https://housesigma.com/on/scarborough-real-estate/148-cleanside-road/home/02Zpj39rBzdYDrK8?id_listing=6zqW7dzoq2eY5eZE&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_9f1d5358f7c25ed04fda824c2d83bcaf.setContent(html_38fc25e0bef276820887548a50127b61);
+            
+        
+
+        marker_739bf89d34bae71ea8a316ee3fe16ee1.bindPopup(popup_9f1d5358f7c25ed04fda824c2d83bcaf)
+        ;
+
+        
+    
+    
+            marker_739bf89d34bae71ea8a316ee3fe16ee1.bindTooltip(
+                `<div>
+                     Stop 15: E11999057
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_739bf89d34bae71ea8a316ee3fe16ee1.setIcon(div_icon_958a1b679ac430c22884b2d623d4a68b);
+            
+    
+            var marker_7120d410d02e240c45162814a9fd46cb = L.marker(
+                [43.71409, -79.30125],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_559236f7aa5658e6ac68330bb1b2e7bb = L.divIcon({
+  "html": "\u003cdiv style=\"background-color:white; border-radius:50%; width:24px; height:24px; font-weight:bold; font-size:12px; text-align:center; line-height:24px; color:#006; border:2px solid #006;\"\u003e16\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_7120d410d02e240c45162814a9fd46cb.setIcon(div_icon_559236f7aa5658e6ac68330bb1b2e7bb);
+        
+    
+        var popup_bf3f43f978f1837fc770482cd53f83dd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c63877086e6ed465b25c58d8d704fafd = $(`<div id="html_c63877086e6ed465b25c58d8d704fafd" style="width: 100.0%; height: 100.0%;">                 <img src="E12110057/images/E12110057_main.jpg" style="width:100%; max-height:200px; object-fit:cover; margin-bottom:10px;">                 <b>Stop 16: E12110057</b><br>                 82 Galbraith Avenue  - Toronto - O'Connor-Parkview<br>                 Listed for: $ 1,099,000<br>                 Detached, 0003+2 bed, 4 bath<br>                 <p><small>OH Sun Sat 2-4</small></p>                 <a href="https://housesigma.com/on/toronto-real-estate/82-galbraith-avenue/home/J6Em7bnAdZB7XBeq?id_listing=LzQ1y5pBDAmYqdeK&utm_campaign=listing&utm_source=user-share&utm_medium=desktop&ign=" target="_blank">View on HouseSigma</a>                 </div>`)[0];
+                popup_bf3f43f978f1837fc770482cd53f83dd.setContent(html_c63877086e6ed465b25c58d8d704fafd);
+            
+        
+
+        marker_7120d410d02e240c45162814a9fd46cb.bindPopup(popup_bf3f43f978f1837fc770482cd53f83dd)
+        ;
+
+        
+    
+    
+            marker_7120d410d02e240c45162814a9fd46cb.bindTooltip(
+                `<div>
+                     Stop 16: E12110057
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7120d410d02e240c45162814a9fd46cb.setIcon(div_icon_559236f7aa5658e6ac68330bb1b2e7bb);
+            
+    
+            var poly_line_943196276e88b1274055627048387fdd = L.polyline(
+                [[43.7223963, -79.3072251], [43.7234881, -79.3076867], [43.7227918, -79.3079433], [43.72082, -79.33303], [43.73273, -79.30982], [43.75561, -79.31321], [43.77781, -79.42681], [43.80776, -79.42553], [43.79604, -79.30186], [43.78323, -79.30596], [43.7775, -79.29887], [43.7554, -79.26501], [43.74018, -79.27534], [43.7328, -79.29762], [43.7186, -79.27725], [43.71409, -79.30125], [43.7223963, -79.3072251]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var marker_1745bce32fd7a83130e2d6dc995c7ea0 = L.marker(
+                [43.7229422, -79.30745590000001],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_5590f312618ee45f55aa8955350ee614 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(253.00989516876058deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_1745bce32fd7a83130e2d6dc995c7ea0.setIcon(div_icon_5590f312618ee45f55aa8955350ee614);
+        
+    
+            marker_1745bce32fd7a83130e2d6dc995c7ea0.bindTooltip(
+                `<div>
+                     From stop 1 to 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1745bce32fd7a83130e2d6dc995c7ea0.setIcon(div_icon_5590f312618ee45f55aa8955350ee614);
+            
+    
+            var marker_a6445af4404166be4f76695bb3a25f6c = L.marker(
+                [43.723139950000004, -79.307815],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_b9cbf5a57674a319a459316f53e8396a = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(104.91320170277658deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_a6445af4404166be4f76695bb3a25f6c.setIcon(div_icon_b9cbf5a57674a319a459316f53e8396a);
+        
+    
+            marker_a6445af4404166be4f76695bb3a25f6c.bindTooltip(
+                `<div>
+                     From stop 2 to 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a6445af4404166be4f76695bb3a25f6c.setIcon(div_icon_b9cbf5a57674a319a459316f53e8396a);
+            
+    
+            var marker_a09b856244d1fa6bb9b5cf1dd40ad1fc = L.marker(
+                [43.72180590000001, -79.32048664999999],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_6826752b20b39b7b4c703033fcd852ca = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(173.80172566487522deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_a09b856244d1fa6bb9b5cf1dd40ad1fc.setIcon(div_icon_6826752b20b39b7b4c703033fcd852ca);
+        
+    
+            marker_a09b856244d1fa6bb9b5cf1dd40ad1fc.bindTooltip(
+                `<div>
+                     From stop 3 to 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a09b856244d1fa6bb9b5cf1dd40ad1fc.setIcon(div_icon_6826752b20b39b7b4c703033fcd852ca);
+            
+    
+            var marker_651cf37697b17745cd2e2cdee9a71fd9 = L.marker(
+                [43.726775, -79.321425],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_113aa413cfaa807d1ed6c912de66eb3d = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(324.6138798589038deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_651cf37697b17745cd2e2cdee9a71fd9.setIcon(div_icon_113aa413cfaa807d1ed6c912de66eb3d);
+        
+    
+            marker_651cf37697b17745cd2e2cdee9a71fd9.bindTooltip(
+                `<div>
+                     From stop 4 to 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_651cf37697b17745cd2e2cdee9a71fd9.setIcon(div_icon_113aa413cfaa807d1ed6c912de66eb3d);
+            
+    
+            var marker_e9f2c02322fde3ea5427fe67af52a432 = L.marker(
+                [43.74417, -79.311515],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_a9411d0ed7d292e123fe99e396e9dd6a = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(263.89155141233533deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_e9f2c02322fde3ea5427fe67af52a432.setIcon(div_icon_a9411d0ed7d292e123fe99e396e9dd6a);
+        
+    
+            marker_e9f2c02322fde3ea5427fe67af52a432.bindTooltip(
+                `<div>
+                     From stop 5 to 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9f2c02322fde3ea5427fe67af52a432.setIcon(div_icon_a9411d0ed7d292e123fe99e396e9dd6a);
+            
+    
+            var marker_57ce8ecb929560e7f951a163bafcd464 = L.marker(
+                [43.76671, -79.37001000000001],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_f5b4663499d5a1318c369cfd5259c151 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(195.1812983422078deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_57ce8ecb929560e7f951a163bafcd464.setIcon(div_icon_f5b4663499d5a1318c369cfd5259c151);
+        
+    
+            marker_57ce8ecb929560e7f951a163bafcd464.bindTooltip(
+                `<div>
+                     From stop 6 to 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_57ce8ecb929560e7f951a163bafcd464.setIcon(div_icon_f5b4663499d5a1318c369cfd5259c151);
+            
+    
+            var marker_8cc2c9adf5fb21373b197808ca9df128 = L.marker(
+                [43.792785, -79.42617],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_7e190148a1360672bb92d2d237031268 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(271.76658513827874deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_8cc2c9adf5fb21373b197808ca9df128.setIcon(div_icon_7e190148a1360672bb92d2d237031268);
+        
+    
+            marker_8cc2c9adf5fb21373b197808ca9df128.bindTooltip(
+                `<div>
+                     From stop 7 to 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8cc2c9adf5fb21373b197808ca9df128.setIcon(div_icon_7e190148a1360672bb92d2d237031268);
+            
+    
+            var marker_d0962782f78285b85e1560cc5a78a663 = L.marker(
+                [43.8019, -79.363695],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_df993df915ac4d7a0df1a229251f4234 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(7.437673692457054deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_d0962782f78285b85e1560cc5a78a663.setIcon(div_icon_df993df915ac4d7a0df1a229251f4234);
+        
+    
+            marker_d0962782f78285b85e1560cc5a78a663.bindTooltip(
+                `<div>
+                     From stop 8 to 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0962782f78285b85e1560cc5a78a663.setIcon(div_icon_df993df915ac4d7a0df1a229251f4234);
+            
+    
+            var marker_3d1303d1aae5f015f6f50c9a3ef1d282 = L.marker(
+                [43.789635000000004, -79.30391],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_6f5f12eda23c3d69ee792cea63091207 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(103.01122204489621deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_3d1303d1aae5f015f6f50c9a3ef1d282.setIcon(div_icon_6f5f12eda23c3d69ee792cea63091207);
+        
+    
+            marker_3d1303d1aae5f015f6f50c9a3ef1d282.bindTooltip(
+                `<div>
+                     From stop 9 to 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d1303d1aae5f015f6f50c9a3ef1d282.setIcon(div_icon_6f5f12eda23c3d69ee792cea63091207);
+            
+    
+            var marker_dab6acb055bc8d086e50bf29a1214bae = L.marker(
+                [43.780365, -79.302415],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_f491db90e8781a798f21f8e04a331ccf = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(48.22117209029932deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_dab6acb055bc8d086e50bf29a1214bae.setIcon(div_icon_f491db90e8781a798f21f8e04a331ccf);
+        
+    
+            marker_dab6acb055bc8d086e50bf29a1214bae.bindTooltip(
+                `<div>
+                     From stop 10 to 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dab6acb055bc8d086e50bf29a1214bae.setIcon(div_icon_f491db90e8781a798f21f8e04a331ccf);
+            
+    
+            var marker_c3b3a1a8cf0d03fd79a6db6805218e7a = L.marker(
+                [43.766450000000006, -79.28193999999999],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_801dcd43cb7a6d47d56e21c49f2b1392 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(42.09532090573828deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_c3b3a1a8cf0d03fd79a6db6805218e7a.setIcon(div_icon_801dcd43cb7a6d47d56e21c49f2b1392);
+        
+    
+            marker_c3b3a1a8cf0d03fd79a6db6805218e7a.bindTooltip(
+                `<div>
+                     From stop 11 to 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3b3a1a8cf0d03fd79a6db6805218e7a.setIcon(div_icon_801dcd43cb7a6d47d56e21c49f2b1392);
+            
+    
+            var marker_86366134bef99bc22b71c197372b3785 = L.marker(
+                [43.74779, -79.270175],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_cf4483d2fc38b17a939f884aeba2ef17 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(116.12207006825611deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_86366134bef99bc22b71c197372b3785.setIcon(div_icon_cf4483d2fc38b17a939f884aeba2ef17);
+        
+    
+            marker_86366134bef99bc22b71c197372b3785.bindTooltip(
+                `<div>
+                     From stop 12 to 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_86366134bef99bc22b71c197372b3785.setIcon(div_icon_cf4483d2fc38b17a939f884aeba2ef17);
+            
+    
+            var marker_e783ba2c6b65ff9e641f4977d6746666 = L.marker(
+                [43.73649, -79.28648],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_906539fe5f5654e4c28bdb96a26fa4e9 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(155.37885715374563deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_e783ba2c6b65ff9e641f4977d6746666.setIcon(div_icon_906539fe5f5654e4c28bdb96a26fa4e9);
+        
+    
+            marker_e783ba2c6b65ff9e641f4977d6746666.bindTooltip(
+                `<div>
+                     From stop 13 to 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e783ba2c6b65ff9e641f4977d6746666.setIcon(div_icon_906539fe5f5654e4c28bdb96a26fa4e9);
+            
+    
+            var marker_49132663d6e1224d1ab293e67310f95f = L.marker(
+                [43.7257, -79.28743499999999],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_84c70adfdd3c2284b80ce4a952f6d8c8 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(43.96183170607185deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_49132663d6e1224d1ab293e67310f95f.setIcon(div_icon_84c70adfdd3c2284b80ce4a952f6d8c8);
+        
+    
+            marker_49132663d6e1224d1ab293e67310f95f.bindTooltip(
+                `<div>
+                     From stop 14 to 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49132663d6e1224d1ab293e67310f95f.setIcon(div_icon_84c70adfdd3c2284b80ce4a952f6d8c8);
+            
+    
+            var marker_de1480bc3340f42f3f40db0ae39c6ca9 = L.marker(
+                [43.716345000000004, -79.28925],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_5c9b8115bcc50a6013b93e0e3d8e5b53 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(165.43433992939924deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_de1480bc3340f42f3f40db0ae39c6ca9.setIcon(div_icon_5c9b8115bcc50a6013b93e0e3d8e5b53);
+        
+    
+            marker_de1480bc3340f42f3f40db0ae39c6ca9.bindTooltip(
+                `<div>
+                     From stop 15 to 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de1480bc3340f42f3f40db0ae39c6ca9.setIcon(div_icon_5c9b8115bcc50a6013b93e0e3d8e5b53);
+            
+    
+            var marker_bda53268bad5d26709be3f6df9a397ad = L.marker(
+                [43.71824315, -79.30423755],
+                {
+}
+            ).addTo(map_053c2c0d94ab36bd5041e99e0655b90c);
+        
+    
+            var div_icon_40c6f8d8ee06e15a7933e4a5cca3a003 = L.divIcon({
+  "html": "\u003cdiv style=\"transform:rotate(242.53192063140935deg); font-size:24px; color:#0033cc; text-shadow:1px 1px 2px white;\"\u003e\u27a4\u003c/div\u003e",
+  "iconSize": [20, 20],
+  "iconAnchor": [10, 10],
+  "className": "empty",
+});
+            marker_bda53268bad5d26709be3f6df9a397ad.setIcon(div_icon_40c6f8d8ee06e15a7933e4a5cca3a003);
+        
+    
+            marker_bda53268bad5d26709be3f6df9a397ad.bindTooltip(
+                `<div>
+                     From stop 16 to 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bda53268bad5d26709be3f6df9a397ad.setIcon(div_icon_40c6f8d8ee06e15a7933e4a5cca3a003);
+            
+</script>
+</html>
